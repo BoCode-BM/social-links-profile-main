@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+html {
+  font-size: 62.5%;
+}
+
+@theme {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+
+  --text-xs: 1.2rem;
+  --text-sm: 1.4rem;
+  --text-base: 1.6rem;
+  --text-lg: 1.8rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.4rem;
+  --text-3xl: 3rem;
+
+  --spacing: 0.4rem;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul li {
+  @apply py-3 rounded-2xl bg-grey-700 hover:bg-green transition cursor-pointer font-bold hover:text-grey-800;
+}
